@@ -1,1 +1,26 @@
 // Mixins in here
+
+
+
+.btn {
+  padding: 15px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 10px;
+  width: 60%;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+	// The compiled color returned is #006667 
+    background-color: darken(teal, 5%)
+  }
+  @media @mobile {
+      width: 80%;
+      margin: 0 auto;
+
+  }
+
+
+}
